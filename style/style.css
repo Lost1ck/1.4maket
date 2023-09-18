@@ -78,6 +78,7 @@ li {
 .list-left {
     display: flex;
     align-items: center;
+    margin-left: -10px;
 }
 
 /* .list-left .items:nth-child(1):hover {
