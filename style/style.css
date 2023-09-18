@@ -78,7 +78,11 @@ li {
 .list-left {
     display: flex;
     align-items: center;
-    margin-left: -13px;
+    margin-left: -24px;
+}
+
+.list-right {
+    margin-right: -24px;
 }
 
 /* .list-left .items:nth-child(1):hover {
@@ -97,7 +101,7 @@ li {
     max-width: 222px;
     margin-bottom: 268px;
     color: var(--main_items);
-    font-family: "TT Lakes-regular", sans-serif;
+    font-family: "TT Lakes-medium", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -166,7 +170,7 @@ li {
 
 .contacts a:nth-child(1) {
     margin: 10px 0;
-    font-family: "TT Lakes-regular", sans-serif;
+    font-family: "TT Lakes-medium", sans-serif;
 }
 
 .contacts a {
@@ -184,7 +188,7 @@ li {
 .lang {
     margin-top: 40px;
     color: #1B1C21;
-    font-family: "TT Lakes-regular", sans-serif;
+    font-family: "TT Lakes-medium", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
