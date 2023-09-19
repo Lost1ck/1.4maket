@@ -67,6 +67,7 @@ li {
 
 .header {
     padding-top: 23px;
+    margin: 0 auto;
 }
 
 .navigation-list {
@@ -119,13 +120,24 @@ li {
 }
 
 
-.main a:hover {
+.main li:hover {
     color:var(--second-text);
     position: relative;
 }
 
-.main a:hover::after {
-    filter: blur(.5px);
+.main li:hover::after {
+    position: absolute;
+    content: '';
+    top: 28px;
+    left: -24px;
+    width: 4px;
+    height: 32px;
+    background-color: var(--second-line);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.main li:nth-child(1):hover::after {
     position: absolute;
     content: '';
     top: -6px;
@@ -135,6 +147,12 @@ li {
     background-color: var(--second-line);
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+}
+
+
+
+.main {
+    white-space: nowrap;
 }
 
     /* ---- footer ---- */
@@ -191,4 +209,10 @@ li {
 
 .lang a:hover {
     color: var(--second-text);
+}
+
+.footer-list:hover > :not(:hover), .list:hover > :not(:hover){
+    transform: scale(1.1);
+    opacity: 0.8;
+    filter: blur(1px);
 }
