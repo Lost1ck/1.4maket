@@ -113,6 +113,7 @@ li {
 
 .list {
     padding-left: 25px;
+    transition: 1s;
 }
 
 .main a {
@@ -163,6 +164,7 @@ li {
 
 .footer-list {
     display: flex;
+    transition: 1s;
 }
 
 .footer-item {
@@ -212,7 +214,5 @@ li {
 }
 
 .footer-list:hover > :not(:hover), .list:hover > :not(:hover){
-    transform: scale(1.1);
-    opacity: 0.8;
     filter: blur(1px);
 }
