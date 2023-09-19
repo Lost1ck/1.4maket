@@ -164,8 +164,8 @@ li {
 
 .footer-list {
     display: flex;
-    transition: 1s;
 }
+
 
 .footer-item {
     padding-right: 16px;
@@ -213,6 +213,9 @@ li {
     color: var(--second-text);
 }
 
+
 .footer-list:hover > :not(:hover), .list:hover > :not(:hover){
     filter: blur(1px);
+    transition: 1s;
+    padding-left: 10px;
 }
