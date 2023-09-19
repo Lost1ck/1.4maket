@@ -204,7 +204,7 @@ li {
 
 .lang {
     margin-top: 40px;
-    color: #1B1C21;
+    color: var(--main_items);
     font-family: "TT Lakes-medium", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -213,10 +213,9 @@ li {
     letter-spacing: -0.2px;
 }
 
-.lang a:hover {
+.lang a:nth-child(1) {
     color: var(--second-text);
 }
-
 
 .footer-list:hover > :not(:hover), .list:hover > :not(:hover){
     filter: blur(1px);
