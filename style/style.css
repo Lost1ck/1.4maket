@@ -119,6 +119,10 @@ li {
     transition: 1s;
 }
 
+.list .list-items a {
+    display: block;
+}
+
 .main a {
     transition-duration: .2s;
 }
