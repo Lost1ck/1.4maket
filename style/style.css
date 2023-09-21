@@ -33,8 +33,6 @@
     --actions__divided: #EAEAEA;
 }
 
-        /* ----Standarts---- */
-
 * {
     padding: 0;
     margin: 0;
@@ -60,43 +58,34 @@ li {
     list-style: none;
 }
 
-.container {
+.sidebar {
+    padding: 25px;
     max-height: 1024px;
+    padding-top: 23px;
     width: 320px;
     background-color: var(--carousel-background);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20),
                 -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
-.header {
-    padding-top: 23px;
-    margin: 0 auto;
-}
-
 .navigation-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .list-left {
     display: flex;
     align-items: center;
-    margin-left: -24px;
-}
-
-.list-right {
-    margin-right: -24px;
 }
 
 .list-left .items:nth-child(1) {
     margin-right: 15px;
 }
 
-.main {
+.container-main {
     margin-top: 57px;
     max-width: 222px;
-    /* margin-bottom: 248px; */
     color: var(--main_items);
     font-family: "TT Lakes-medium", sans-serif;
     font-size: 16px;
@@ -107,74 +96,52 @@ li {
 }
 
 .list__items {
-    padding-top: 32px;
+    margin-top: 32px;
 }
 
 .list__items:nth-child(1) {
-    padding-top: 0;
+    margin-top: 0;
 }
 
 .list {
-    padding-left: 25px;
     transition: 1s;
 }
 
-.list .list-items a {
-    display: block;
-}
+    /* ---- main ---- */
 
-.main a {
+.container-main .list__items > a {
     transition-duration: .2s;
 }
 
-
-.main li:hover {
-    color:var(--second-text);
+.container-main .list > li {
     position: relative;
 }
 
-.main li:hover::after {
+.container-main .list > li:hover::after {
     position: absolute;
     content: '';
-    top: 28px;
+    top: -4px;
     left: -24px;
     width: 4px;
     height: 32px;
     background-color: var(--second-line);
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-radius: 0 3px 3px 0;
 }
 
-.main li:nth-child(1):hover::after {
-    position: absolute;
-    content: '';
-    top: -6px;
-    left: -24px;
-    width: 4px;
-    height: 32px;
-    background-color: var(--second-line);
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-
-
-.main {
+.container-main {
     white-space: nowrap;
 }
 
     /* ---- footer ---- */
 
-.footer {
+.container-footer {
     padding-top: 260px;
-    padding-left: 24px;
     padding-bottom: 10px;
 }
 
 .footer-list {
     display: flex;
 }
-
 
 .footer-item {
     padding-right: 16px;
