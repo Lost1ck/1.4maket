@@ -135,8 +135,7 @@ li {
     /* ---- footer ---- */
 
 .container-footer {
-    padding-top: 260px;
-    padding-bottom: 10px;
+    margin-top: 260px;
 }
 
 .footer-list {
