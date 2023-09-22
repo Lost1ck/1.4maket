@@ -60,7 +60,6 @@ li {
 
 .sidebar {
     padding: 25px;
-    padding-top: 23px;
     max-width: 320px;
     background-color: var(--carousel-background);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20),
@@ -72,18 +71,18 @@ li {
     letter-spacing: -0.2px;
 }
 
-.navigation-list {
+.header__navigation-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.list-left {
+.header__list-left {
     display: flex;
     align-items: center;
 }
 
-.list-left .items:nth-child(1) {
+.header__list-left .header__link:nth-child(1) {
     margin-right: 15px;
 }
 
@@ -93,11 +92,11 @@ li {
     font-family: "TT Lakes-medium", sans-serif;
 }
 
-.list__items {
+.menu__item {
     margin-top: 32px;
 }
 
-.list__items:nth-child(1) {
+.menu__item:nth-child(1) {
     margin-top: 0;
 }
 
@@ -107,15 +106,15 @@ li {
 
     /* ---- main ---- */
 
-.main .list__items > a {
+.main .menu__item > a {
     transition-duration: .2s;
 }
 
-.main .list > li {
+.main .menu__list > li {
     position: relative;
 }
 
-.main .list > li:hover::after {
+.main .menu__list > li:hover::after {
     position: absolute;
     content: '';
     top: -4px;
@@ -136,25 +135,25 @@ li {
     margin-top: 260px;
 }
 
-.footer-list {
+.footer-menu__list {
     display: flex;
 }
 
-.footer-item {
+.footer-menu__item {
     padding-right: 16px;
 }
 
-.contacts {
+.footer-contacts {
     color: #1B1C21;
     font-family: "TT Lakes-demi", sans-serif;
 }
 
-.contacts a:nth-child(1) {
+.footer-contacts a:nth-child(1) {
     margin: 10px 0;
     font-family: "TT Lakes-medium", sans-serif;
 }
 
-.contacts a {
+.footer-contacts a {
     display: block;
 }
 
@@ -166,17 +165,17 @@ li {
     letter-spacing: -0.6px;
 }
 
-.lang {
+.footer-lang {
     margin-top: 40px;
     color: var(--main_items);
     font-family: "TT Lakes-medium", sans-serif;
 }
 
-.lang a:nth-child(1) {
+.footer-lang a:nth-child(1) {
     color: var(--second-text);
 }
 
-.footer-list:hover > :not(:hover), .list:hover > :not(:hover){
+.footer-menu__list:hover > :not(:hover), .menu__list:hover > :not(:hover){
     filter: blur(1px);
     transition: 1s;
 }
