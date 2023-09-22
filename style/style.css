@@ -60,12 +60,16 @@ li {
 
 .sidebar {
     padding: 25px;
-    max-height: 1024px;
     padding-top: 23px;
     max-width: 320px;
     background-color: var(--carousel-background);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20),
                 -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
 }
 
 .navigation-list {
@@ -83,16 +87,10 @@ li {
     margin-right: 15px;
 }
 
-.container-main {
+.main {
     margin-top: 57px;
-    max-width: 222px;
     color: var(--main_items);
     font-family: "TT Lakes-medium", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
 }
 
 .list__items {
@@ -109,15 +107,15 @@ li {
 
     /* ---- main ---- */
 
-.container-main .list__items > a {
+.main .list__items > a {
     transition-duration: .2s;
 }
 
-.container-main .list > li {
+.main .list > li {
     position: relative;
 }
 
-.container-main .list > li:hover::after {
+.main .list > li:hover::after {
     position: absolute;
     content: '';
     top: -4px;
@@ -128,13 +126,13 @@ li {
     border-radius: 0 3px 3px 0;
 }
 
-.container-main {
+.main {
     white-space: nowrap;
 }
 
     /* ---- footer ---- */
 
-.container-footer {
+.footer {
     margin-top: 260px;
 }
 
@@ -149,11 +147,6 @@ li {
 .contacts {
     color: #1B1C21;
     font-family: "TT Lakes-demi", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
 }
 
 .contacts a:nth-child(1) {
@@ -177,11 +170,6 @@ li {
     margin-top: 40px;
     color: var(--main_items);
     font-family: "TT Lakes-medium", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
 }
 
 .lang a:nth-child(1) {
