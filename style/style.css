@@ -59,20 +59,22 @@ li {
 }
 
 .sidebar {
-    overflow: auto;
-    position: absolute;
+    position: relative;
     padding: 25px;
     width: 320px;
+    height: 100vh;
     background-color: var(--carousel-background);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20),
-                -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    overflow-y: scroll;
+}
+
+.font {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
-    display: grid;
-    grid-template-rows: 2fr 70vh 4fr;
 }
 
 .header__navigation-list {
@@ -130,9 +132,17 @@ li {
 
 .main {
     white-space: nowrap;
+    margin-bottom: 20px;
 }
 
     /* ---- footer ---- */
+
+.footer {
+    padding: 25px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
 
 .footer-menu__list {
     display: flex;
@@ -178,3 +188,35 @@ li {
     filter: blur(1px);
     transition: 1s;
 }
+
+.sidebar {
+    width: 320px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .block {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Добавьте фоновый цвет, чтобы различать блоки */
+  }
+  
+  .absolute-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Занимает всю ширину родителя */
+    background-color: #ffffff; /* Добавьте фоновый цвет, чтобы различать блоки */
+  }
+  
+  .block:last-child {
+    margin-bottom: 0;
+  }
+  
