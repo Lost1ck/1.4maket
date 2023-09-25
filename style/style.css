@@ -42,7 +42,6 @@
 }
 
 body {
-    overflow-y: scroll;
     position: relative;
 }
 
@@ -60,7 +59,7 @@ li {
 }
 
 .sidebar {
-    overflow-y: scroll;
+    overflow: auto;
     position: absolute;
     padding: 25px;
     width: 320px;
@@ -73,7 +72,7 @@ li {
     line-height: 24px;
     letter-spacing: -0.2px;
     display: grid;
-    grid-template-rows: 10vh 70vh 20vh;
+    grid-template-rows: 2fr 70vh 4fr;
 }
 
 .header__navigation-list {
@@ -97,7 +96,7 @@ li {
 }
 
 .menu__item {
-    margin-top: 5vh;
+    margin-top: 32px;
 }
 
 .menu__item:nth-child(1) {
