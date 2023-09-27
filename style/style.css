@@ -42,7 +42,7 @@
 }
 
 body {
-    position: relative;
+    /* position: relative; */
 }
 
 ul {
@@ -59,13 +59,14 @@ li {
 }
 
 .sidebar {
-    overflow-y: auto;
+    position: relative;
+    overflow-y: scroll;
     padding: 25px;
     width: 320px;
-    height: 100vh;
+    min-height: 1024px;
     background-color: var(--carousel-background);
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20),
-    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+                -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 }
 
 .font {
@@ -92,6 +93,7 @@ li {
 }
 
 .main {
+    height: 420px;
     color: var(--main_items);
     font-family: "TT Lakes-medium", sans-serif;
 }
@@ -131,14 +133,13 @@ li {
 
 .main {
     white-space: nowrap;
-    margin-bottom: 20px;
 }
 
     /* ---- footer ---- */
 
 .footer {
     padding: 25px;
-    position:absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
 }
@@ -187,22 +188,4 @@ li {
     filter: blur(1px);
     transition: 1s;
 }
-  
-  .block {
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background-color: #ffffff; /* Добавьте фоновый цвет, чтобы различать блоки */
-  }
-  
-  .absolute-block {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%; /* Занимает всю ширину родителя */
-    background-color: #ffffff; /* Добавьте фоновый цвет, чтобы различать блоки */
-  }
-  
-  .block:last-child {
-    margin-bottom: 0;
-  }
   
